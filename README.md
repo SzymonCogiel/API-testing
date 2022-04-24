@@ -12,6 +12,9 @@ found here:
 a) For the method lengthOfLongestSubstring I wrote a test which checks if the function value is consistent with the expected value.
 The whole thing was written in Python and with the help of Pytest.
 
+Tests cases for random characters and the empty string.
+It would be possible to add a case-insensitive search method and then use str.lower() before using lengthOfLongestSubstring.
+
 To run test:
 ```
 pytest longest_substring_test.py

@@ -86,8 +86,8 @@ def part_update_booking(n: int):
     _, _, token = create_token()
     headers = {'Content-Type': 'application/json', 'Accept': 'application/json', 'Cookie': 'token={0}'.format(token["token"])}
 
-    # Making a PUT request
-    r = requests.put('{0}/{1}'.format(BOOK_URL, n), data={
+    # Making a PATCH request
+    r = requests.patch('{0}/{1}'.format(BOOK_URL, n), data={
         "firstname": "Zu",
         "lastname": "La"
     }, headers=headers)

@@ -56,7 +56,7 @@ class TestAPI(unittest.TestCase):
         r, mess = delete_booking(id)
         assert r == 201, mess
         x, _ = delete_booking(id)
-        assert x == 405, "No existet"
+        assert x == 405, "No deleted"
 
 
     # CHECKING Ping

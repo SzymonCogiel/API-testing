@@ -11,6 +11,7 @@ found here:
 
 a) For the method lengthOfLongestSubstring I wrote a test which checks if the function value is consistent with the expected value.
 The whole thing was written in Python and with the help of Pytest.
+
 To run test:
 ```
 pytest longest_substring_test.py
@@ -21,6 +22,7 @@ pytest longest_substring_test.py
 b) The purpose of these tests was to validate the API.
 
 The tests were written in python with the help of unittest and the functions executing the API rules with the help of requests, pycurl, io, json.
+
 To run test:
 ```
 nose2 --verbose

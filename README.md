@@ -26,7 +26,7 @@ Result:
 
 b) The purpose of these tests was to validate the API.
 
-API passed all tests except for the one PACH test, so it appears that the API is not working properly and requires a fix for CreateBooking
+API passed all tests except for the one PACH test, so it appears that the API is not working properly and requires a fix for PartialUpdateBooking
 
 The tests were written in python with the help of unittest and the functions executing the API rules with the help of requests, pycurl, io, json.
 

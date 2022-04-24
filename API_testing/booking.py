@@ -3,6 +3,7 @@ import pycurl
 from io import BytesIO
 import json
 
+
 BOOK_URL = 'https://restful-booker.herokuapp.com/booking'
 
 
@@ -54,31 +55,6 @@ def create_booking():
     r = requests.post(BOOK_URL, json=data, headers=headers)
     print(r.status_code, r.reason)
     return r.status_code, r.reason
-
-    """ALTERNATIVE"""
-    # c = pycurl.Curl()
-    # # initializing the request URL
-    # c.setopt(c.URL, 'https://restful-booker.herokuapp.com/booking')
-    # # the data that we need to Post
-    # post_data = {
-    #     "firstname" : "Jacu",
-    #     "lastname" : "Placu",
-    #     "totalprice" : 999,
-    #     "depositpaid" : True,
-    #     "bookingdates" : {
-    #         "checkin" : "2018-01-01",
-    #         "checkout" : "2019-01-01"
-    #     },
-    #     "additionalneeds" : "Breakfast"
-    # }
-    # # encoding the string to be used as a query
-    # postfields = urlencode(post_data)
-    # # setting the cURL for POST operation
-    # c.setopt(c.POSTFIELDS, postfields)
-    # # perform file transfer
-    # c.perform()
-    # # Ending the session and freeing the resources
-    # c.close()
 
 
 def update_booking(n: int):
